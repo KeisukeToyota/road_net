@@ -198,6 +198,6 @@ def main(net):
 
 if __name__ == '__main__':
     net = RoadNetwork()
-    net.load_network_pickle('ten_nodes.pkl')
+    net.load_network_pickle('../models/ten_nodes.pkl')
     r = main(net)
     print(r) # 探索結果の経路出力
