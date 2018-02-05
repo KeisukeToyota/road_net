@@ -1,7 +1,7 @@
 # Road network simulator
 
 # setup
-`pip install -r pip.txt`
+`$ pip install -r pip.txt`
 
 # usage
 ```
