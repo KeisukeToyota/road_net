@@ -12,6 +12,7 @@ import copy
 import pickle
 import random
 import math
+import ga
 
 
 class RoadNetwork(nx.Graph):
@@ -413,3 +414,8 @@ class RoadNetwork(nx.Graph):
         self.__path_result(result['transit_nodes'],
                            result['result_route'],
                            result['result_weight'])
+
+    def draw_ga(self):
+        t = ga.main(self)
+        self.__path_result([''], t, 0)
+        return True
