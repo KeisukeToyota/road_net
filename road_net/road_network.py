@@ -176,8 +176,7 @@ class RoadNetwork(nx.Graph):
             nodes_size = len(self.nodes())
 
             for node in self.nodes(data=True):
-                distance = self.__nodes_distance(position, node[1]['position'])
-                if distance <= math.log(node_count)/node_count:
+                if self.__nodes_distance(position, node[1]['position']) <= math.log(node_count)/node_count:
                     break
 
                 if node == self.nodes(data=True)[-1]:
@@ -192,9 +191,7 @@ class RoadNetwork(nx.Graph):
             source = random.choice(self.nodes(data=True))
             target = random.choice(self.nodes(data=True))
 
-            distance = self.__nodes_distance(source[1]['position'], target[1]['position'])
-
-            if distance <= math.log(node_count)/math.sqrt(node_count):
+            if self.__nodes_distance(source[1]['position'], target[1]['position']) <= math.log(node_count)/math.sqrt(node_count):
                 edge = (source[0], target[0], self.__nodes_distance(
                     source[1]['position'], target[1]['position']))
             else:
