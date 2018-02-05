@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# road_net documentation build configuration file, created by
-# sphinx-quickstart on Tue Jan 30 15:40:58 2018.
+# src documentation build configuration file, created by
+# sphinx-quickstart on Mon Feb  5 20:09:36 2018.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -17,9 +17,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
+# import os
 import sys
-sys.path.insert(0, '/Users/toyotakeisuke/workspace/road_network_simulator/road_net')
+sys.path.insert(0, '/Users/toyotakeisuke/workspace/road_network_simulator/src')
 
 
 # -- General configuration ------------------------------------------------
@@ -48,7 +48,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'road_net'
+project = 'src'
 copyright = '2018, Author'
 author = 'Author'
 
@@ -114,7 +114,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'road_netdoc'
+htmlhelp_basename = 'srcdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -141,7 +141,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'road_net.tex', 'road\\_net Documentation',
+    (master_doc, 'src.tex', 'src Documentation',
      'Author', 'manual'),
 ]
 
@@ -151,7 +151,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'road_net', 'road_net Documentation',
+    (master_doc, 'src', 'src Documentation',
      [author], 1)
 ]
 
@@ -162,8 +162,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'road_net', 'road_net Documentation',
-     author, 'road_net', 'One line description of project.',
+    (master_doc, 'src', 'src Documentation',
+     author, 'src', 'One line description of project.',
      'Miscellaneous'),
 ]
 
