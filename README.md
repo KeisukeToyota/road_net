@@ -1,4 +1,5 @@
 # Road network simulator
+The document is `docs/_build/html/index.html`
 
 # setup
 `$ pip install -r pip.txt`
